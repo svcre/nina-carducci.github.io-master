@@ -70,11 +70,10 @@ body {
     z-index: 0;
 }
 
-
-/* .picture img {
+.picture img {
     max-width: 500px;
-    height: 500px;
-} */
+    height: auto;
+}
 
 #about-me {
     flex: 2
@@ -271,11 +270,6 @@ address {
     align-items: center;
     justify-content: space-between;
     margin: 0;
-}
-
-.imgsize {
-    max-width: 100%;
-    height: auto;
 }
 
 @media all and (max-width: 1180px) {
