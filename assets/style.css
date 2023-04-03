@@ -71,7 +71,7 @@ body {
 }
 
 .picture img {
-    max-width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
@@ -270,6 +270,11 @@ address {
     align-items: center;
     justify-content: space-between;
     margin: 0;
+}
+
+.imgsize {
+    max-width: 500px;
+    height: auto;
 }
 
 @media all and (max-width: 1180px) {
