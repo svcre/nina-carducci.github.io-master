@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*!
+/*
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
@@ -228,7 +228,7 @@ blockquote {
 
 b,
 strong {
-    font-weight: normal;
+    font-weight: bolder;
 }
 
 small,
@@ -7536,7 +7536,6 @@ fieldset:disabled .btn {
 
 .min-vw-100 {
     min-width: 100vw !important;
-    height: auto;
 }
 
 .h-25 {

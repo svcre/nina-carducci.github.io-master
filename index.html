@@ -18,10 +18,10 @@
     </noscript>
 
     <meta charset="UTF-8">
-    <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-    <script src="./assets/maugallery.min.js" defer></script>
-    <script src="./assets/scripts.min.js" defer></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./assets/maugallery.js"></script>
+    <script src="./assets/scripts.js"></script>
 
     <!-- Open Graph - Facebook -->
     <meta property="og:title" content="Découvrez Nina Carducci, photographe à Bordeaux" />
@@ -36,7 +36,6 @@
     <meta name="twitter:site" content="@ninacarducci">
     <meta name="twitter:title" content="Nina Carducci, photographe - Bordeaux" />
     <meta name="twitter:description" content="Découvrez Nina Carducci, photographe mariages, concerts, entreprises et portraits à Bordeaux et en Ile-de-France." />
-    <!-- Twitter summary card avec image large de 280x150px -->
     <meta name="twitter:image:src" content="https://nina-carducci.github.io/assets/images/meta.jpg" />
 
     <!-- Epingle Pinterest -->
@@ -262,14 +261,21 @@
 
             <address>
 
-                            <h3>Coordonnées</h3>
-                                
-                                68 avenue Alsace-Lorraine
-                                Bordeaux, 33200
-                                
-                            <p>56 67 78 89</p>
-                            <p>du lundi au vendredi</p>
-                            <p>de 10 h à 19 h</p>
+                <div itemscope itemtype="http://schema.org/Corporation">
+                    <h4 itemprop="name">Coordonnées</h4>
+                    <p>
+                      <span itemprop="founders">Nina Carducci</span>
+                    </p>
+                    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                      <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
+                      <span itemprop="postalCode">33200</span> <span itemprop="addressLocality">Bordeaux</span>
+                    </p>
+                    <p>
+                      <span itemprop="telephone">03 56 67 78 89
+
+                      </span>
+                    </p>
+                  </div>
                     </address>
 
         </div>
@@ -287,7 +293,9 @@
             "image": "",
             "@id": "",
             "url": "https://nina-carducci.github.io/",
-            "telephone": "+3-3",
+            "telephone": "03 56 67 78 89
+
+                ",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "68 avenue Alsace-Lorraine",
